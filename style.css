@@ -12,6 +12,13 @@
     src: url('/assets/fonts/LucidaGrande.ttf');
 }
 
+/* Font for overskrift for avsnitt */
+@font-face
+{
+    font-family: STIX Two Math;
+    src: url('/assets/fonts/STIXTwoMath.ttf');
+}
+
 /* Variabler (f.eks. farger) */
 :root
 {
@@ -20,10 +27,14 @@
     --color-white: #F2F2F2;
 }
 
-/* Fjern margin fra body */
 body
 {
+    /* Fjern margin ("ramme") fra body */
     margin: 0;
+
+    /* Farger */
+    background: var(--color-white);
+    color: var(--color-green);
 }
 
 /* Styling for introduksjon */
@@ -67,4 +78,60 @@ body
     font-family: Lucida Grande, sans-serif;
     font-weight: normal;
     font-size: 45px;
+}
+
+/* Main innhold */
+#main-content
+{
+    /* Placement av selve alt */
+    margin: 175px auto;
+    max-width: 1460px;
+
+    /* Placement av ting inni */
+    display: grid;
+    grid-template-columns: 650px 600px;
+    justify-content: space-between;
+    row-gap: 190px;
+}
+
+/* Tving bildene i main innhold til riktig size */
+#main-content img
+{
+    width: 100%;
+}
+
+/* Vanlig tekst i main innhold */
+#main-content p
+{
+    /* Spacing */
+    margin: 0;
+
+    /* Font */
+    font-family: Muli, sans-serif;
+    font-size: 35px;
+    line-height: 50px;
+}
+
+/* Right align tekst */
+.right-align
+{
+    text-align: right;
+}
+
+/* Overskrift for avsnitt */
+.paragraph-heading
+{
+    /* Spacing */
+    margin: 0;
+
+    /* Font */
+    font-family: STIX Two Math, serif;
+    font-weight: normal;
+    font-size: 120px;
+}
+
+/* Skygge for bilde */
+.shadow-left
+{
+    box-shadow: -70px 45px var(--color-gold);
 }
