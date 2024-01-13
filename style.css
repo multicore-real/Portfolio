@@ -19,6 +19,13 @@
     src: url('/assets/fonts/STIXTwoMath.ttf');
 }
 
+/* Font for overskrift for hvert prosjekt */
+@font-face
+{
+    font-family: Oswald Heavy;
+    src: url('/assets/fonts/OswaldHeavy.ttf');
+}
+
 /* Variabler (f.eks. farger) */
 :root
 {
@@ -153,4 +160,68 @@ body
 .shadow-left
 {
     box-shadow: -70px 45px var(--color-gold);
+}
+
+/* Prosjekter */
+#projects
+{
+    /* Placement av ting inni */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Farger */
+    background: var(--color-green);
+    color: var(--color-gold);
+
+    /* Placement av tekst for prosjekter */
+    text-align: center;
+}
+
+/* Tittel for hele prosjekter-seksjonen */
+#projects-header
+{
+    /* Bruk hele topp raden */
+    grid-column: 1/4;
+
+    /* Spacing rundt */
+    padding: 90px;
+}
+
+/* Knapper for valg av prosjekter-side (rett under overskriften) */
+#projects-pages
+{
+    /* Posisjon av ting inni */
+    display: flex;
+    justify-content: space-between;
+
+    /* Placement og size */
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 985px;
+
+    /* Linje over */
+    border-top: 1px solid var(--color-gold);
+
+    /* Farge */
+    color: var(--color-white);
+
+    /* Tekst */
+    font-family: Muli, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Tittel for hvert individuelt prosjekt */
+.project-title
+{
+    font-family: Oswald Heavy, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Undertitler for hvert prosjekt */
+.project-subtitle
+{
+    /* TODO: Legg inn font for denne */
 }
