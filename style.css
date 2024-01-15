@@ -47,6 +47,7 @@ html
     scroll-behavior: smooth;
 }
 
+/* Styling for hele nettsiden */
 body
 {
     /* Fjern margin ("ramme") fra body */
@@ -55,6 +56,26 @@ body
     /* Farger */
     background: var(--color-white);
     color: var(--color-green);
+}
+
+/* Text selection (tekst som du highlighter liksom) */
+::selection
+{
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
+/* Class for ting som skal ha inverterte selection farger */
+.selection-inverted ::selection
+{
+    background: var(--color-gold);
+    color: var(--color-green);
+}
+
+/* Class for ting som ikke skal ha selectable innhold */
+.selection-none
+{
+    user-select: none;
 }
 
 /* Styling for introduksjon */
