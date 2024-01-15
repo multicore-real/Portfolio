@@ -166,6 +166,12 @@ body
     line-height: 40px;
 }
 
+/* Avsnitt breaks */
+br
+{
+    margin-bottom: 15px;
+}
+
 /* Right align tekst */
 .right-align
 {
