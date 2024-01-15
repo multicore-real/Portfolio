@@ -1,0 +1,51 @@
+/* Grid med prosjekter inni */
+#projects-grid
+{
+    /* Placement av ting inni */
+    /* Denne er faktisk en flex i stedet for en grid, for at den skal bli mer nice hvis du endrer browser size */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Space mellom prosjekter (vertical, horizontal) */
+    gap: 40px 110px;
+
+    /* Placement og size */
+    margin: 0 auto;
+    padding: 0 70px;
+    max-width: 1622px;
+}
+
+/* Forsidebilde for hvert prosjekt */
+.project-image
+{
+    /* Sizing */
+    width: 465px;
+    height: 347px;
+
+    /* Crop vekk de delene av bildet som er utenfor "rammen" */
+    object-fit: cover;
+}
+
+/* Tittel for hvert individuelt prosjekt */
+.project-title
+{
+    font-family: Oswald Heavy, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Undertitler for hvert prosjekt */
+.project-subtitle
+{
+    font-family: Grantha Sangm MN, sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+/* Class for en helt tom div (hack for rett spacing i prosjekt overview */
+.empty-465w
+{
+    width: 465px;
+}
