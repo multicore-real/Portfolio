@@ -251,14 +251,15 @@ body
     /* Placement av ting inni */
     /* Denne er faktisk en flex i stedet for en grid, for at den skal bli mer nice hvis du endrer browser size */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
-    /* Minimum space mellom prosjekter */
-    gap: 40px;
+    /* Space mellom prosjekter (vertical, horizontal) */
+    gap: 40px 110px;
 
     /* Placement og size */
     margin: 0 auto;
+    padding: 0 70px;
     max-width: 1622px;
 }
 
