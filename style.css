@@ -294,15 +294,21 @@ body
     font-size: 19px;
 }
 
-/* Footer */
-#footer
+/* Footer wrapper (basically bare bakgrunnsfargen, den er utenfor slik at den kan utvide helt til sidene */
+#footer-wrapper
 {
-    /* Spacing */
-    padding: 65px 200px;
-
     /* Farger */
     background: var(--color-gold);
     color: var(--color-green);
+}
+
+/* Footer */
+#footer
+{
+    /* Spacing og size */
+    margin: 0 auto;
+    padding: 65px 0;
+    max-width: 1622px;
 
     /* Tekst */
     font-family: Muli, sans-serif;
