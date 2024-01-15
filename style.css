@@ -162,8 +162,8 @@ body
 
     /* Font */
     font-family: Muli, sans-serif;
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 40px;
 }
 
 /* Right align tekst */
@@ -254,16 +254,12 @@ body
     justify-content: space-between;
     flex-wrap: wrap;
 
+    /* Minimum space mellom prosjekter */
+    gap: 40px;
+
     /* Placement og size */
     margin: 0 auto;
     max-width: 1622px;
-}
-
-/* Hvert individuelt prosjekt */
-.project
-{
-    /* Mer spacing under */
-    padding-bottom: 40px;
 }
 
 /* Forsidebilde for hvert prosjekt */
@@ -292,6 +288,12 @@ body
     font-family: Grantha Sangm MN, sans-serif;
     font-weight: normal;
     font-size: 19px;
+}
+
+/* Class for en helt tom div (hack for rett spacing i prosjekt overview */
+.empty-465w
+{
+    width: 465px;
 }
 
 /* Footer wrapper (basically bare bakgrunnsfargen, den er utenfor slik at den kan utvide helt til sidene */
