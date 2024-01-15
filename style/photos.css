@@ -1,0 +1,35 @@
+/* Stylesheet for photos in the projects section */
+#photos-collage
+{
+    /* Putt innholdet ved siden av hverandre */
+    display: flex;
+    gap: 30px;
+
+    /* Size and position */
+    margin: 0 auto;
+    width: max-content;
+}
+
+/* Left kolonne (liten size) */
+#photos-column-left
+{
+    width: 420px;
+}
+
+/* Middle kolonne (stor size) */
+#photos-column-center
+{
+    width: 620px;
+}
+
+/* Right kolonne (medium size) */
+#photos-column-right
+{
+    width: 520px;
+}
+
+/* Styling for alle bildene */
+img
+{
+    padding-bottom: 30px;
+}
