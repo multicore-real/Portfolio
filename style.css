@@ -244,6 +244,12 @@ br
     text-transform: uppercase;
 }
 
+/* Sett hover (knapp) cursor for prosjekt-knappene */
+#projects-pages a
+{
+    cursor: pointer;
+}
+
 /* Den valgte prosjektsiden */
 .selected-page
 {
