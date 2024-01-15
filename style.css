@@ -171,24 +171,17 @@ body
 /* Prosjekter */
 #projects
 {
-    /* Placement av ting inni */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
     /* Farger */
     background: var(--color-green);
     color: var(--color-gold);
 
-    /* Placement av tekst for prosjekter */
+    /* Placement av tekst */
     text-align: center;
 }
 
 /* Tittel for hele prosjekter-seksjonen */
 #projects-header
 {
-    /* Bruk hele topp raden */
-    grid-column: 1/4;
-
     /* Spacing rundt */
     padding: 90px;
 }
@@ -215,6 +208,27 @@ body
     font-family: Muli, sans-serif;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+/* Den valgte prosjektsiden */
+.selected-page
+{
+    color: var(--color-gold);
+    text-decoration: underline;
+}
+
+/* Grid med prosjekter inni */
+#projects-grid
+{
+    /* Placement av ting inni */
+    /* Denne er faktisk en flex i stedet for en grid, for at den skal bli mer nice hvis du endrer browser size */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* Placement og size */
+    margin: 0 auto;
+    max-width: 1622px;
 }
 
 /* Forsidebilde for hvert prosjekt */
