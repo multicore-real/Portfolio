@@ -26,6 +26,13 @@
     src: url('/assets/fonts/OswaldHeavy.ttf');
 }
 
+/* Font for undertitler for hvert prosjekt */
+@font-face
+{
+    font-family: Grantha Sangm MN;
+    src: url('/assets/fonts/GranthaSangamMn.otf');
+}
+
 /* Variabler (f.eks. farger) */
 :root
 {
@@ -231,6 +238,13 @@ body
     max-width: 1622px;
 }
 
+/* Hvert individuelt prosjekt */
+.project
+{
+    /* Mer spacing under */
+    padding-bottom: 40px;
+}
+
 /* Forsidebilde for hvert prosjekt */
 .project-image
 {
@@ -254,7 +268,9 @@ body
 /* Undertitler for hvert prosjekt */
 .project-subtitle
 {
-    /* TODO: Legg inn font for denne */
+    font-family: Grantha Sangm MN, sans-serif;
+    font-weight: normal;
+    font-size: 19px;
 }
 
 /* Footer */
