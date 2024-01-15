@@ -31,5 +31,9 @@
 /* Styling for alle bildene */
 img
 {
+    /* Vertikalt mellomrom mellom bildene*/
     padding-bottom: 30px;
+
+    /* Ha riktig size */
+    width: 100%;
 }
