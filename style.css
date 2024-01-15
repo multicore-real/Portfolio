@@ -289,3 +289,10 @@ body
     padding-right: 140px;
     line-height: 2.5em;
 }
+
+/* Links i footeren */
+#footer a
+{
+    /* Ikke gi linkene link-color (blue) */
+    color: currentColor;
+}
