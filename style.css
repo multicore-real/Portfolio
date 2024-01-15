@@ -256,3 +256,36 @@ body
 {
     /* TODO: Legg inn font for denne */
 }
+
+/* Footer */
+#footer
+{
+    /* Spacing */
+    padding: 65px 200px;
+
+    /* Farger */
+    background: var(--color-gold);
+    color: var(--color-green);
+
+    /* Tekst */
+    font-family: Muli, sans-serif;
+    font-size: 24px;
+}
+
+/* Overskrift i footeren */
+.footer-heading
+{
+    /* Spacing */
+    margin-top: 0;
+
+    /* Tekst */
+    font-weight: normal;
+    font-size: 60px;
+}
+
+/* Spacing for "vanlig" tekst i footeren */
+#footer td
+{
+    padding-right: 140px;
+    line-height: 2.5em;
+}
