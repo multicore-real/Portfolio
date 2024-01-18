@@ -78,6 +78,13 @@ body
     user-select: none;
 }
 
+/* Linker */
+a
+{
+    /* Ikke gi linkene link-color (blue) */
+    color: currentColor;
+}
+
 /* Styling for introduksjon */
 #introduction
 {
@@ -294,11 +301,4 @@ br
 {
     padding-right: 140px;
     line-height: 2.5em;
-}
-
-/* Links i footeren */
-#footer a
-{
-    /* Ikke gi linkene link-color (blue) */
-    color: currentColor;
 }
