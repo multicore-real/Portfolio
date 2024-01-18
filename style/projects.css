@@ -8,20 +8,20 @@
     flex-wrap: wrap;
 
     /* Space mellom prosjekter (vertical, horizontal) */
-    gap: 40px 110px;
+    gap: 30px 80px;
 
     /* Placement og size */
     margin: 0 auto;
-    padding: 0 70px;
-    max-width: 1622px;
+    padding: 0 50px;
+    max-width: 1215px;
 }
 
 /* Forsidebilde for hvert prosjekt */
 .project-image
 {
     /* Sizing */
-    width: 465px;
-    height: 347px;
+    width: 350px;
+    height: 260px;
 
     /* Crop vekk de delene av bildet som er utenfor "rammen" */
     object-fit: cover;
@@ -32,7 +32,7 @@
 {
     font-family: Oswald Heavy, sans-serif;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
@@ -41,11 +41,11 @@
 {
     font-family: Grantha Sangm MN, sans-serif;
     font-weight: normal;
-    font-size: 19px;
+    font-size: 14px;
 }
 
-/* Class for en helt tom div (hack for rett spacing i prosjekt overview */
-.empty-465w
+/* Class for en helt tom div (hack for rett spacing i prosjekt overview) */
+.empty-project
 {
-    width: 465px;
+    width: 350px;
 }

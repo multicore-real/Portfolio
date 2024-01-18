@@ -3,7 +3,7 @@
 {
     /* Putt innholdet ved siden av hverandre */
     display: flex;
-    gap: 30px;
+    gap: 22px;
 
     /* Size and position */
     margin: 0 auto;
@@ -13,26 +13,26 @@
 /* Left kolonne (liten size) */
 #photos-column-left
 {
-    width: 420px;
+    width: 315px;
 }
 
 /* Middle kolonne (stor size) */
 #photos-column-center
 {
-    width: 620px;
+    width: 465px;
 }
 
 /* Right kolonne (medium size) */
 #photos-column-right
 {
-    width: 520px;
+    width: 390px;
 }
 
 /* Styling for alle bildene */
 img
 {
     /* Vertikalt mellomrom mellom bildene*/
-    padding-bottom: 30px;
+    padding-bottom: 22px;
 
     /* Ha riktig size */
     width: 100%;

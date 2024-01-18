@@ -114,7 +114,7 @@ a
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
-    font-size: 178px;
+    font-size: 134px;
 }
 
 /* Liten tekst som kommer rett under hoved-overskrift */
@@ -126,7 +126,7 @@ a
     /* Font */
     font-family: Lucida Grande, sans-serif;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 34px;
 }
 
 /* Front page pil ned */
@@ -134,10 +134,10 @@ a
 {
     /* Position */
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
 
     /* Size */
-    width: 43px;
+    width: 32px;
 }
 
 /* Main innhold */
@@ -145,14 +145,14 @@ a
 {
     /* Placement av selve alt */
     margin: 0 auto;
-    padding: 175px 0;
-    max-width: 1460px;
+    padding: 130px 0;
+    max-width: 1095px;
 
     /* Placement av ting inni */
     display: grid;
-    grid-template-columns: 650px 600px;
+    grid-template-columns: 490px 450px;
     justify-content: space-between;
-    row-gap: 190px;
+    row-gap: 140px;
 }
 
 /* Tving bildene i main innhold til riktig size */
@@ -169,14 +169,14 @@ a
 
     /* Font */
     font-family: Muli, sans-serif;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 21px;
+    line-height: 30px;
 }
 
 /* Avsnitt breaks */
 br
 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Right align tekst */
@@ -194,19 +194,19 @@ br
     /* Font */
     font-family: STIX Two Math, serif;
     font-weight: normal;
-    font-size: 120px;
+    font-size: 90px;
 }
 
 /* Skygge for bilde */
 .shadow-left
 {
-    box-shadow: -70px 45px var(--color-gold);
+    box-shadow: -50px 34px var(--color-gold);
 }
 
 /* Skygge for et gjennomsiktig bilde */
 .image-shadow-right
 {
-    filter: drop-shadow(22px -12px var(--color-gold));
+    filter: drop-shadow(16px -9px var(--color-gold));
 }
 
 /* Prosjekter */
@@ -224,7 +224,7 @@ br
 #projects-header
 {
     /* Spacing rundt */
-    padding: 90px;
+    padding: 70px;
 }
 
 /* Knapper for valg av prosjekter-side (rett under overskriften) */
@@ -236,8 +236,8 @@ br
 
     /* Placement og size */
     margin: 0 auto;
-    padding: 25px;
-    max-width: 985px;
+    padding: 20px;
+    max-width: 740px;
 
     /* Linje over */
     border-top: 1px solid var(--color-gold);
@@ -247,7 +247,7 @@ br
 
     /* Tekst */
     font-family: Muli, sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
@@ -277,12 +277,12 @@ br
 {
     /* Spacing og size */
     margin: 0 auto;
-    padding: 65px 0;
-    max-width: 1622px;
+    padding: 50px 0;
+    max-width: 1215px;
 
     /* Tekst */
     font-family: Muli, sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 /* Overskrift i footeren */
@@ -293,12 +293,12 @@ br
 
     /* Tekst */
     font-weight: normal;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 /* Spacing for "vanlig" tekst i footeren */
 #footer td
 {
-    padding-right: 140px;
+    padding-right: 105px;
     line-height: 2.5em;
 }
