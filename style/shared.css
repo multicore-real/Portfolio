@@ -1,0 +1,87 @@
+/* This stylesheet is shared between the main (index) page and the subpages */
+/* Font for overskrift */
+@font-face
+{
+    font-family: Hefigrah;
+    src: url('/assets/fonts/Hefigrah.otf');
+}
+
+/* Font for underoverskrift */
+@font-face
+{
+    font-family: Lucida Grande;
+    src: url('/assets/fonts/LucidaGrande.ttf');
+}
+
+/* Font for overskrift for avsnitt */
+@font-face
+{
+    font-family: STIX Two Math;
+    src: url('/assets/fonts/STIXTwoMath.ttf');
+}
+
+/* Font for overskrift for hvert prosjekt */
+@font-face
+{
+    font-family: Oswald Heavy;
+    src: url('/assets/fonts/OswaldHeavy.ttf');
+}
+
+/* Font for undertitler for hvert prosjekt */
+@font-face
+{
+    font-family: Grantha Sangm MN;
+    src: url('/assets/fonts/GranthaSangamMn.otf');
+}
+
+/* Variabler (f.eks. farger) */
+:root
+{
+    --color-green: #022326;
+    --color-gold: #F2B872;
+    --color-white: #F2F2F2;
+}
+
+/* La nettsiden scrolle smooth */
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Styling for hele nettsiden */
+body
+{
+    /* Fjern margin ("ramme") fra body */
+    margin: 0;
+
+    /* Farger */
+    background: var(--color-white);
+    color: var(--color-green);
+}
+
+/* Text selection (tekst som du highlighter liksom) */
+::selection
+{
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
+/* Class for ting som skal ha inverterte selection farger */
+.selection-inverted ::selection
+{
+    background: var(--color-gold);
+    color: var(--color-green);
+}
+
+/* Class for ting som ikke skal ha selectable innhold */
+.selection-none
+{
+    user-select: none;
+}
+
+/* Linker */
+a
+{
+    /* Ikke gi linkene link-color (blue) */
+    color: currentColor;
+}

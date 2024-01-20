@@ -1,0 +1,35 @@
+/* This stylesheet is used for subpages containing project texts and that stuff */
+
+#header
+{
+    /* Denne trengs slik at tilbakeknappen har rett posisjon */
+    position: relative;
+    background: var(--color-green);
+    color: var(--color-gold);
+}
+
+/* Knapp som navigerer tilbake til forsiden */
+#back-button
+{
+    /* Sett posisjon skikkelig */
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    /* Size */
+    width: 30px;
+}
+
+/* Teksten (overskriften) i headeren */
+#header-text
+{
+    /* Putt i midten */
+    width: max-content;
+    margin: 0 auto;
+
+    /* Font */
+    font-family: Hefigrah, serif;
+    font-weight: normal;
+    font-size: 40px;
+}
