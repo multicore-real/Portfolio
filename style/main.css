@@ -114,7 +114,7 @@ a
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
-    font-size: 134px;
+    font-size: 175px;
 }
 
 /* Liten tekst som kommer rett under hoved-overskrift */
@@ -126,7 +126,7 @@ a
     /* Font */
     font-family: Lucida Grande, sans-serif;
     font-weight: normal;
-    font-size: 34px;
+    font-size: 45px;
 }
 
 /* Front page pil ned */
@@ -137,7 +137,10 @@ a
     bottom: 60px;
 
     /* Size */
-    width: 32px;
+    width: 42px;
+
+    /* Putt den i midten horisontalt */
+    transform: translatex(-50%);
 }
 
 /* Main innhold */
