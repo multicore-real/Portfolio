@@ -24,12 +24,43 @@
 /* Teksten (overskriften) i headeren */
 #header-text
 {
+    /* Denne trengs slik at sidestrekene har rett posisjon */
+    position: relative;
+
     /* Putt i midten */
     width: max-content;
     margin: 0 auto;
+    padding: 30px 50px;
 
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
     font-size: 40px;
+}
+
+/* Strek til venstre for tekst i header */
+#header-text::before, #header-text::after
+{
+    /* Variabel for lengde */
+    --line-length: 330px;
+
+    /* Sizing */
+    content: '';
+    display: block;
+    width: var(--line-length);
+
+    /* Positioning */
+    position: absolute;
+    top: 50%;
+    left: calc(var(--line-length) * -1);
+
+    /* Strek */
+    border-top: 1px solid var(--color-gold);
+}
+
+/* Fiks posisjon for strek etter tekst i header */
+#header-text::after
+{
+    left: unset;
+    right: calc(var(--line-length) * -1);
 }
