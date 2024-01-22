@@ -96,3 +96,36 @@ img
 {
     height: 100%;
 }
+
+/* Class for blend mode multiply (fikser hvit bakgrunn for noen bilder) */
+.blend-multiply
+{
+    mix-blend-mode: multiply;
+}
+
+/* Class for full bredde (ta hele horizontal spacen) */
+.full-width
+{
+    /* Sett bredden til hele parent container */
+    width: 100%;
+
+    /* Legg til litt spacing og */
+    padding: 70px 0;
+}
+
+/* Linje som bruk som separator */
+hr
+{
+    /* Spacing */
+    margin: 0 70px;
+
+    /* Border */
+    border-top: 1px solid var(--color-green);
+    border-bottom: none;
+}
+
+/* Legg til spacing over overskriftene */
+.paragraph-heading
+{
+    padding-top: 150px;
+}
