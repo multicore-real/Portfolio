@@ -129,3 +129,10 @@ hr
 {
     padding-top: 150px;
 }
+
+/* Overwrite fargene i footer */
+#footer-wrapper
+{
+    background: var(--color-green);
+    color: var(--color-white);
+}
