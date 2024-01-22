@@ -64,3 +64,35 @@
     left: unset;
     right: calc(var(--line-length) * -1);
 }
+
+/* Sizing for main content */
+#main-content
+{
+    margin: 0 auto;
+    max-width: 1095px;
+}
+
+/* Hovedoverskrift for subpage */
+#page-title
+{
+    padding: 70px;
+    text-align: center;
+}
+
+/* Class for content som skal vises ved siden av hverandre */
+.content-flex
+{
+    /* Flex things */
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    /* Size */
+    height: 400px;
+}
+
+/* Fiks image height */
+img
+{
+    height: 100%;
+}
