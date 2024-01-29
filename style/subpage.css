@@ -130,6 +130,12 @@ hr
     padding-top: 150px;
 }
 
+/* Brukt noen steder for mer space under siste element av main content */
+.space-below
+{
+    margin-bottom: 60px;
+}
+
 /* Overwrite fargene i footer */
 #footer-wrapper
 {
