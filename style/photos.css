@@ -29,11 +29,12 @@
 }
 
 /* Styling for alle bildene */
-img
+#photos-collage img
 {
     /* Vertikalt mellomrom mellom bildene*/
     padding-bottom: 22px;
 
     /* Ha riktig size */
     width: 100%;
+    height: unset;
 }
