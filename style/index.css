@@ -29,7 +29,7 @@
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
-    font-size: 175px;
+    font-size: clamp(70px, 10vw, 175px); /* Clamp lar den bytte size ut i fra browser window size */
 }
 
 /* Liten tekst som kommer rett under hoved-overskrift */

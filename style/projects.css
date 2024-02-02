@@ -16,6 +16,13 @@
     max-width: 1215px;
 }
 
+/* Hvert enkelt prosjekt */
+#projects-grid a
+{
+    /* Fjern tekst underline */
+    text-decoration: none;
+}
+
 /* Forsidebilde for hvert prosjekt */
 .project-image
 {
