@@ -1,5 +1,7 @@
-// Load projects on load
-focusProjects();
+// Preload images on load, then focus projects
+// I kinda hate how this looks, but it is somewhat necessary for the preloading to really work
+$('#preload-projects').load('/components/projects.html', () => focusProjects());
+$('#preload-photos').load('/components/photos.html');
 
 function focusProjects()
 {
@@ -8,7 +10,7 @@ function focusProjects()
     document.querySelector('#photos-page-button').classList.remove('selected-page');
 
     // Load content
-    $('#projects-content').load('/components/projects.html');
+    document.querySelector('#projects-content').innerHTML = document.querySelector('#preload-projects').innerHTML;
 }
 
 function focusPhotos()
@@ -18,5 +20,5 @@ function focusPhotos()
     document.querySelector('#photos-page-button').classList.add('selected-page');
 
     // Load content
-    $('#projects-content').load('/components/photos.html');
+    document.querySelector('#projects-content').innerHTML = document.querySelector('#preload-photos').innerHTML;
 }

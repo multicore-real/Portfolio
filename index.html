@@ -12,8 +12,23 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/style/shared.css">
         <link rel="stylesheet" href="/style/index.css">
+        <link rel="stylesheet" href="/style/projects.css"> <!-- Stylesheet for prosjekter -->
+        <link rel="stylesheet" href="/style/photos.css"> <!-- Stylesheet for bilder -->
+
+        <!-- Preload fonts to display them faster -->
+        <link rel="preload" href="/assets/fonts/GranthaSangamMn.otf" as="font" crossorigin>
+        <link rel="preload" href="/assets/fonts/Hefigrah.otf" as="font" crossorigin>
+        <link rel="preload" href="/assets/fonts/LucidaGrande.ttf" as="font" crossorigin>
+        <link rel="preload" href="/assets/fonts/OswaldHeavy.ttf" as="font" crossorigin>
+        <link rel="preload" href="/assets/fonts/STIXTwoMath.ttf" as="font" crossorigin>
     </head>
     <body>
+        <!-- Ting som skal preloades puttes inni her av jQuery -->
+        <div id="preload">
+            <div id="preload-projects"></div>
+            <div id="preload-photos"></div>
+        </div>
+
         <!-- Introduksjon (stor overskrift) -->
         <div id="introduction" class="selection-none">
             <h1 class="huge-text">Elias Heggernes</h1>
@@ -66,7 +81,7 @@
             </div>
 
             <!-- Innhold -->
-            <!-- Her vil det komme flere ting, men det vil bli dynamisk loadet av jQuery fra filene i /components -->
+            <!-- Her vil det komme flere ting, men det vil bli dynamisk loadet gjennom /scripts/index.js fra filene i /components -->
             <div id="projects-content"></div>
         </div>
 

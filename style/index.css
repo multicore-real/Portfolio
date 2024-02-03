@@ -1,5 +1,11 @@
 /* This stylesheet is used for the main front (index) page */
 
+/* Styling for preload container (skal bli usynlig) */
+#preload
+{
+    display: none;
+}
+
 /* Styling for introduksjon */
 #introduction
 {
