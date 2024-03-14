@@ -95,7 +95,7 @@ a
     /* Font */
     font-family: STIX Two Math, serif;
     font-weight: normal;
-    font-size: 90px;
+    font-size: clamp(40px, 9vw, 90px);
 }
 
 /* Vanlig tekst i main innhold */
@@ -147,4 +147,37 @@ a
 {
     padding-right: 105px;
     line-height: 2.5em;
+}
+
+/* Annen footer spacing for mindre skjermer */
+@media (max-width: 800px)
+{
+    #footer
+    {
+        padding-bottom: 0;
+    }
+
+    .footer-heading
+    {
+        padding-left: 10px;
+    }
+
+    #footer tr
+    {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 10px;
+        width: calc(100vw - 2 * 10px);
+    }
+
+    #footer td
+    {
+        padding-right: 0; /* Fjern padding for normal spacing */
+    }
+
+    #footer td:last-child
+    {
+        text-align: right;
+    }
 }

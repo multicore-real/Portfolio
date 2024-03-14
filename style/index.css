@@ -35,7 +35,7 @@
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
-    font-size: clamp(70px, 10vw, 175px); /* Clamp lar den bytte size ut i fra browser window size */
+    font-size: clamp(55px, 10vw, 175px); /* Clamp lar den bytte size ut i fra browser window size */
 }
 
 /* Liten tekst som kommer rett under hoved-overskrift */
@@ -47,7 +47,7 @@
     /* Font */
     font-family: Lucida Grande, sans-serif;
     font-weight: normal;
-    font-size: 45px;
+    font-size: clamp(17px, 5vw, 45px);
 }
 
 /* Front page pil ned */
@@ -83,6 +83,19 @@
 #main-content img
 {
     width: 100%;
+}
+
+/* Main content for mindre skjermer (f.eks. mobil) */
+@media (max-width: 1150px)
+{
+    #main-content
+    {
+        /* La alt bli under hverandre */
+        grid-template-columns: 80vw;
+
+        /* Center align ting */
+        width: fit-content;
+    }
 }
 
 /* Avsnitt breaks */
