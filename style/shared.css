@@ -150,7 +150,7 @@ a
 }
 
 /* Annen footer spacing for mindre skjermer */
-@media (max-width: 800px)
+@media (max-width: 450px)
 {
     #footer
     {
