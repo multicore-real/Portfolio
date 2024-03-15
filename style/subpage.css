@@ -35,7 +35,7 @@
     /* Font */
     font-family: Hefigrah, serif;
     font-weight: normal;
-    font-size: 40px;
+    font-size: clamp(25px, 5vw, 40px);
 }
 
 /* Strek til venstre for tekst i header */
@@ -141,4 +141,34 @@ hr
 {
     background: var(--color-green);
     color: var(--color-white);
+}
+
+/* Styling for mindre skjermer */
+@media (max-width: 1100px)
+{
+    /* Vis innhold under hverandre i stedet av ved siden av */
+    .content-flex
+    {
+        flex-direction: column;
+        gap: 0; /* Spacing blir satt av padding for p elementer */
+    }
+
+    /* Spacing rundt */
+    .content-flex p
+    {
+        padding:20px;
+    }
+
+    /* Legg til spacing ved siden av overskriftene */
+    .paragraph-heading
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Fjern header striper */
+    #header-text::before, #header-text::after
+    {
+        display: none;
+    }
 }
