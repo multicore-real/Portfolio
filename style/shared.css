@@ -101,7 +101,7 @@ a
     /* Font */
     font-family: STIX Two Math, serif;
     font-weight: normal;
-    font-size: clamp(40px, 9vw, 90px);
+    font-size: clamp(40px, 9vw, 70px);
 }
 
 /* Vanlig tekst i main innhold */

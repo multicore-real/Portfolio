@@ -15,7 +15,7 @@
     z-index: 1;
 
     /* Transition */
-    transition: .5s ease;
+    transition: transform .5s ease;
 }
 
 /* Knapp som navigerer tilbake til forsiden */
