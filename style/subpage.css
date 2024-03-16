@@ -2,10 +2,20 @@
 
 #header
 {
-    /* Denne trengs slik at tilbakeknappen har rett posisjon */
-    position: relative;
+    /* Posisjon og size */
+    position: fixed;
+    transform: translateY(0); /* Denne skal bli endret av javascript */
+    width: 100vw;
+
+    /* Farge */
     background: var(--color-green);
     color: var(--color-gold);
+
+    /* Always be on top */
+    z-index: 1;
+
+    /* Transition */
+    transition: .5s ease;
 }
 
 /* Knapp som navigerer tilbake til forsiden */
@@ -68,7 +78,7 @@
 /* Sizing for main content */
 #main-content
 {
-    margin: 0 auto;
+    margin: 100px auto 0;
     max-width: 1095px;
 }
 
@@ -166,11 +176,10 @@ hr
         padding:20px;
     }
 
-    /* Legg til spacing ved siden av overskriftene */
+    /* Modify spacing */
     .paragraph-heading
     {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 50px 20px 0;
     }
 
     /* Fjern header striper */
