@@ -85,19 +85,6 @@
     width: 100%;
 }
 
-/* Main content for mindre skjermer (f.eks. mobil) */
-@media (max-width: 1150px)
-{
-    #main-content
-    {
-        /* La alt bli under hverandre */
-        grid-template-columns: 80vw;
-
-        /* Center align ting */
-        width: fit-content;
-    }
-}
-
 /* Avsnitt breaks */
 br
 {
@@ -175,4 +162,54 @@ br
 {
     color: var(--color-gold);
     text-decoration: underline;
+}
+
+/* Main content for mindre skjermer (f.eks. mobil) */
+@media (max-width: 1150px)
+{
+    #main-content
+    {
+        /* La alt bli under hverandre */
+        grid-template-columns: 80vw;
+
+        /* Center align ting */
+        width: fit-content;
+    }
+
+    /* Move introduction to be first */
+    #main-introduction
+    {
+        grid-row: 1/1;
+    }
+
+    /* Modify overskriftene litt */
+    .paragraph-heading
+    {
+        transform: translateY(-40px);
+        text-align: center;
+    }
+
+    /* Skjul original overskrift */
+    #main-introduction .paragraph-heading span
+    {
+        display: none;
+    }
+
+    /* Ny overskrift */
+    #main-introduction .paragraph-heading:after
+    {
+        content: 'Hvem er jeg?';
+    }
+
+    /* Flytt bilde litt */
+    #introduction-photo
+    {
+        transform: translate(25px, -50px) scale(.9);
+    }
+
+    /* Disable right align */
+    .right-align
+    {
+        text-align: unset;
+    }
 }
