@@ -42,10 +42,13 @@
     --color-white: #F2F2F2;
 }
 
-/* La nettsiden scrolle smooth */
 html
 {
+    /* La nettsiden scrolle smooth */
     scroll-behavior: smooth;
+
+    /* ""fix"" to hide sidescroll */
+    overflow-x: hidden;
 }
 
 /* Styling for hele nettsiden */
@@ -57,6 +60,9 @@ body
     /* Farger */
     background: var(--color-white);
     color: var(--color-green);
+
+    /* ""fix"" to hide sidescroll */
+    overflow-x: hidden;
 }
 
 /* Text selection (tekst som du highlighter liksom) */
