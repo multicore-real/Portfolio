@@ -207,9 +207,9 @@ br
         transform: translate(25px, -50px) scale(.9);
     }
 
-    /* Disable right align */
+    /* Make right align centered instead */
     .right-align
     {
-        text-align: unset;
+        text-align: center;
     }
 }
