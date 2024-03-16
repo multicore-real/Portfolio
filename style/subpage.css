@@ -130,6 +130,13 @@ hr
     padding-top: 150px;
 }
 
+/* Legg til farget linje under overskriftene for hvert avsnitt */
+.paragraph-heading:not(#page-title)
+{
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold);
+}
+
 /* Brukt noen steder for mer space under siste element av main content */
 .space-below
 {
