@@ -97,6 +97,12 @@ br
     text-align: right;
 }
 
+/* Left align tekst */
+.left-align
+{
+    text-align: left;
+}
+
 /* Skygge for bilde */
 .shadow-left
 {
@@ -157,6 +163,12 @@ br
     cursor: pointer;
 }
 
+/* Sett hover (knapp) cursor for prosjekt-knappene */
+#projects-pages a:hover
+{
+    text-decoration: #F2B872 underline;
+}
+
 /* Den valgte prosjektsiden */
 .selected-page
 {
@@ -209,6 +221,12 @@ br
 
     /* Make right align centered instead */
     .right-align
+    {
+        text-align: center;
+    }
+
+    /* Make left align centered instead */
+    .left-align
     {
         text-align: center;
     }

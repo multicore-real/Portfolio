@@ -23,6 +23,12 @@
     text-decoration: none;
 }
 
+#projects-grid a:hover .project-title
+{
+    /* Legg til underline når hover */
+    text-decoration: underline;
+}
+
 /* Forsidebilde for hvert prosjekt */
 .project-image
 {
