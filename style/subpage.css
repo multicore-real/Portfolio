@@ -136,6 +136,12 @@ img
     padding: 70px 0;
 }
 
+/* Class for removing top spacing */
+.no-top-space
+{
+    padding-top: 0 !important;
+}
+
 /* Class for tynnere avsnitt */
 .thin-paragraph
 {
