@@ -34,5 +34,5 @@ window.onscroll = () =>
 const urlParams = new URLSearchParams(window.location.search); // Get URL parameters
 if (urlParams.has('scroll') && sessionStorage['scrollPosition']) // Make sure user has scroll parameter and scroll value
 {
-    window.scrollTo({ top: sessionStorage['scrollPosition'] });
+    window.scrollTo({ top: sessionStorage['scrollPosition'], behavior: 'instant' });
 }
