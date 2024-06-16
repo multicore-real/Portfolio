@@ -100,11 +100,18 @@
 {
     /* Flex things */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
 
     /* Size */
     height: 400px;
+}
+
+/* Class for align to top of flex */
+.top-align
+{
+    align-items: start;
 }
 
 /* Fiks image height */
@@ -127,6 +134,26 @@ img
 
     /* Legg til litt spacing og */
     padding: 70px 0;
+}
+
+/* Class for removing top spacing */
+.no-top-space
+{
+    padding-top: 0 !important;
+}
+
+/* Class for tynnere avsnitt */
+.thin-paragraph
+{
+    max-width: 35ch;
+}
+
+/* Class som slipper at setninger fordeles over flere linjer (fjerner linjeskift fra dette elementet)
+   Kan brukes hvis man vil ha all teksten i et element i samme linje.
+ */
+.no-line-break
+{
+    white-space: nowrap;
 }
 
 /* Linje som bruk som separator */
@@ -159,11 +186,26 @@ hr
     margin-bottom: 60px;
 }
 
+/* Used to offset photos collage slightly left because it is too large */
+.offset
+{
+    transform: translateX(-60px);
+}
+
 /* Overwrite fargene i footer */
 #footer-wrapper
 {
     background: var(--color-green);
     color: var(--color-white);
+}
+
+/* Fjern photos collage offset hvis det kun er en kolonne */
+@media (max-width: 1200px)
+{
+    .offset
+    {
+        transform: unset;
+    }
 }
 
 /* Styling for mindre skjermer */
@@ -192,5 +234,14 @@ hr
     #header-text::before, #header-text::after
     {
         display: none;
+    }
+}
+
+/* Fix for safari */
+@media not all and (min-width: 1100px) and (min-resolution: .1dpi)
+{
+    .paragraph-heading
+    {
+        padding-top: 150px !important;
     }
 }

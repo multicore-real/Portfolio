@@ -22,3 +22,17 @@ function focusPhotos()
     // Load content
     document.querySelector('#projects-content').innerHTML = document.querySelector('#preload-photos').innerHTML;
 }
+
+// Save the scroll position to sessionStorage every time it changes
+// Use sessionStorage instead of localStorage to automatically clear it when the user session ends
+window.onscroll = () =>
+{
+    sessionStorage['scrollPosition'] = window.scrollY;
+}
+
+// When the page loads, check if it should go to the last scroll position
+const urlParams = new URLSearchParams(window.location.search); // Get URL parameters
+if (urlParams.has('scroll') && sessionStorage['scrollPosition']) // Make sure user has scroll parameter and scroll value
+{
+    window.scrollTo({ top: sessionStorage['scrollPosition'], behavior: 'instant' });
+}
