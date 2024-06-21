@@ -211,6 +211,13 @@ hr
 /* Styling for mindre skjermer */
 @media (max-width: 1100px)
 {
+    #main-content
+    {
+        margin-top: -50px !important;
+
+        max-width: 1095px;
+    }
+
     /* Vis innhold under hverandre i stedet av ved siden av */
     .content-flex
     {
@@ -227,6 +234,7 @@ hr
     /* Modify spacing */
     .paragraph-heading
     {
+        margin-top: 60px;
         padding: 50px 20px 0;
     }
 
@@ -234,6 +242,22 @@ hr
     #header-text::before, #header-text::after
     {
         display: none;
+    }
+
+    #video
+    {
+        margin-top: -150px;
+    }
+
+    #logo-bilde
+    {
+        margin-top: 150px;
+    }
+
+    #line-landet
+    {
+        margin-top: 150px;
+        margin-bottom: -50px;
     }
 }
 
